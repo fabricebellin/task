@@ -1,0 +1,24 @@
+/* TaskItem.css */
+.task-item {
+                         display: flex;
+                         align-items: center;
+                         justify-content: space-between;
+                         padding: 10px;
+                         border-bottom: 1px solid #eee;
+                       }
+                       
+                       .task-item span {
+                         flex-grow: 1;
+                         margin-right: 10px;
+                       }
+                       
+                       .task-item.completed span {
+                         text-decoration: line-through;
+                         color: #999;
+                       }
+                       
+                       .task-item__buttons {
+                         display: flex;
+                         gap: 5px;
+                       }
+                       

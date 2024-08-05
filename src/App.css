@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
-}
+/* App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+html {
+  font-family: 'Merriweather';
+  background-image: url('./image/ok1.jpg'); /* Chemin relatif au dossier src */
+  background-size: cover;
+  background-position: center;
   color: white;
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+/* Styles généraux */
+body {
+  font-family: 'Merriweather';
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App {
+  max-width: 80%;
+  margin: 20px auto; /* Centre l'application horizontalement */
+  padding: 20px;
+  background-color: #333333cc; 
+  border-radius: 10px;
+  margin-top: 320px; 
+  margin-bottom: 20px; /* Ajoute une marge inférieure au conteneur App */
 }
+
+h1 {
+  text-align: center;
+  color: #61dafb; 
+  margin-bottom: 20px;
+}
+
+/* Styles du formulaire */
+.task-form {
+  display: flex;
+  align-items: flex-start; /* Aligner les éléments en haut du conteneur */
+  justify-content: space-between;
+}
+
+.task-form input[type="text"] {
+  width: 70%; 
+  padding: 15px; 
+  border: none;
+  border-radius: 5px;
+  background-color: #4444; 
+  color: white;
+  font-size: 25px; 
+  margin-bottom: 10px; /* Ajoute une marge en bas du champ */
+}
+
+.task-form button {
+  padding: 12px 20px; 
+  background-color: #61dafb; 
+  color: #282c34;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 10px; /* Ajoute une marge à droite du bouton */
+}
+
+/* Styles de la liste de tâches */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px; 
+  background-color: #444444cc; 
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 10px; 
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+li button {
+  font-family: 'Merriweather';
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  border: 2px solid #61dafb; /* Exemple : bordure de 2px, solide, bleue */
+  padding: 5px 10px; /* Ajoute un peu d'espace autour du texte */
+
+}
+
+li button:hover {
+  text-decoration: underline; 
+}
+
+input {
+  font-size: 25px;
+  font-family: 'Merriweather';
+}
+
+button {
+  font-size: 25px;
+  font-family: 'Merriweather';
+  margin-left: 30px;
+}
+
+/* Styles pour la case à cocher "Tout supprimer" */
+.delete-all-container {
+  align-self: flex-end;  /* Aligner la case à cocher en bas du conteneur */
+}
+
+.signature {
+  text-align: right;   /* Aligner le texte à droite */
+  font-size: 18px;
+  color: #999;
+}
+
+/* App.css */
+/* ... (vos autres styles) ... */
+
+.alert {
+  color: red;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
